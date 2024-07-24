@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+header#cabecalho button {
+  padding: 6px 12px;
+  margin: 2px 2px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  background-color: #000000ce;
+  transition: all 0.2s;
+  color: #ffffff;
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+nav#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 150px;
+  left: -10px;
+  width: 102.5%;
+  font-family: "Tillana", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  background-color: rgb(56, 35, 8);
+}
+
+p.para-lore {
+  font-family: "Tangerine", sans-serif;
+  font-size: 22pt;
+  color: #240e25;
+  text-shadow: 0.55px 0.55px 0.55px #240e25;
+}
