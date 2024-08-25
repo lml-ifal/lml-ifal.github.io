@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fale Conosco!</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/faleconosco.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="shortcut icon" href="artes/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Quem somos?</h1>
+          <p>"O sol negro que paira sobre o deserto"</p>
+        </hgroup>
+        <nav id="menu">
+          <h2>Menu Principal</h2>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="suaficha.html">Fichas</a></li>
+            <li><a href="fichasmulti.html">Fichas Aleatórias</a></li>
+            <li style="float: right">
+              <a href="fale-conosco.html">Fale Conosco</a>
+            </li>
+          </ul>
+        </nav>
+        <button onclick="tocaRaul()" id="playPause">PLAY &#9658;</button>
+        <button onclick="stop()">STOP</button>
+      </header>
+      <div id="corpo-full">
+        <article id="myself">
+          <h3>Darksun Company</h3>
+          <div id="company">
+            <img
+              id="selfie"
+              src="artes/android-chrome-512x512.png"
+              alt="Dark sun"
+            />
+          </div>
+          <p>
+            Bem-vindo ao nosso site, o tema do site é baseado na campanha de
+            <a href="https://en.wikipedia.org/wiki/Dark_Sun" target="_blank"
+              >Darksun</a
+            >
+            da 5ª Edição de D&D, como um passatempo capaz de entreter e cativar
+            seus jogadores, poderão utilizar o ambiente virtual da plataforma
+            para salvar a ficha de seus personagens ou gerar novas fichas
+            aleatoriamente
+          </p>
+          <p>
+            Esse site é a imposição em prática do que aprendemos mediante nossas
+            experiências como desenvolvedores web. Esperamos que você curta!
+            Manda seu Feedback, os contatos estão sempre nos rodapés das páginas
+            do site.
+          </p>
+        </article>
+        <article id="artigo-formulario">
+          <h2>Formulário de Contato</h2>
+          <form method="post" id="fcontato">
+            <fieldset id="usuario">
+              <legend>Identificação do Usuário</legend>
+              <p>
+                <label for="cnome">Nome:</label
+                ><input
+                  type="text"
+                  name="Nome"
+                  id="cnome"
+                  size="20"
+                  maxlength="30"
+                  placeholder="Nome Completo"
+                />
+              </p>
+              <p>
+                <label for="cemail">E-mail:</label
+                ><input
+                  type="email"
+                  name="Mail"
+                  id="cemail"
+                  size="20"
+                  maxlength="40"
+                />
+              </p>
+              <fieldset id="sexo">
+                <legend>Sexo:</legend>
+                <input type="radio" name="Sexo" id="cmasc" checked /><label
+                  for="cmasc"
+                  >Masculino</label
+                ><br />
+                <input type="radio" name="Sexo" id="cfem" /><label for="cfem"
+                  >Feminino</label
+                >
+              </fieldset>
+            </fieldset>
+            <fieldset id="endereco">
+              <legend>Endereço do Usuário</legend>
+              <p>
+                <label for="crua">Logradouro:</label
+                ><input
+                  type="text"
+                  name="Rua"
+                  id="crua"
+                  size="13"
+                  maxlength="80"
+                  placeholder="Rua, Av, Trav..."
+                />
+              </p>
+              <p>
+                <label for="cnum">Número:</label
+                ><input
+                  type="number"
+                  name="Num"
+                  id="cnum"
+                  min="0"
+                  max="99999"
+                />
+              </p>
+              <p>
+                <label for="cest">Estado:</label
+                ><select name="Est" id="cest">
+                  <optgroup label="Região Nordeste">
+                    <option value="AL" selected>Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="BA">Bahia</option>
+                  </optgroup>
+                  <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                  </optgroup>
+                  <optgroup label="Região Sul">
+                    <option value="PA">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                  </optgroup>
+                  <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="AC">Acre</option>
+                  </optgroup>
+                  <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                  </optgroup>
+                </select>
+              </p>
+              <p>
+                <label for="ccid">Cidade:</label
+                ><input
+                  type="text"
+                  name="Cid"
+                  id="ccid"
+                  maxlength="40"
+                  size="20"
+                  placeholder="Sua Cidade"
+                  list="cidades"
+                />
+              </p>
+              <datalist id="cidades">
+                <option value="Arapiraca"></option>
+                <option value="Maceió"></option>
+              </datalist>
+            </fieldset>
+            <fieldset id="mensagem">
+              <legend>Mensagem do Usuário</legend>
+              <p>
+                <label for="cmsg">Mensagem:</label>
+                <textarea
+                  name="Msg"
+                  id="cmsg"
+                  cols="45"
+                  rows="5"
+                  placeholder="Deixe aqui a sua mensagem"
+                ></textarea>
+              </p>
+            </fieldset>
+            <button
+              type="button"
+              onclick="msg()"
+              style="position: relative; left: 220px"
+            >
+              Enviar
+            </button>
+          </form>
+        </article>
+      </div>
+      <footer id="rodape">
+        <p>
+          <em
+            >Copyright &copy; 2024 - by Lucas Marques<br /><a
+              href="https://www.instagram.com/lucasmarques_leo"
+              target="_blank"
+              >Instagram</a
+            >
+            |
+            <a href="https://github.com/Lucas-Marques-Leao" target="_blank"
+              >GitHub</a
+            ></em
+          >
+        </p>
+      </footer>
+    </div>
+    <audio id="musica" loop>
+      <source src="midia/ewoods.mp3" type="audio/mp3" />
+      <p>Seu navegador não suporta mp3</p>
+    </audio>
+    <script src="js/funcoes.js"></script>
+  </body>
+</html>

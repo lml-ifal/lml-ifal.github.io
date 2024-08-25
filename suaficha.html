@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fichas</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/charactersheets.css" />
+    <link rel="shortcut icon" href="artes/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Suas Fichas</h1>
+          <p>&rarr;Status</p>
+          <p>&rarr;Itens</p>
+        </hgroup>
+        <nav id="menu">
+          <h2>Menu Principal</h2>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="suaficha.html">Fichas</a></li>
+            <li><a href="fichasmulti.html">Fichas Aleatórias</a></li>
+            <li style="float: right">
+              <a href="fale-conosco.html">Fale Conosco</a>
+            </li>
+          </ul>
+        </nav>
+        <button onclick="tocaRaul()" id="playPause">PLAY &#9658;</button>
+        <button onclick="stop()">STOP</button>
+      </header>
+      <section id="corpo">
+        <h2 style="display: none">Campanhas</h2>
+        <article class="charnote">
+          <h2>
+            &clubs; Sua Campanha
+            <button
+              class="add-button"
+              style="margin-left: 5px"
+              title="Adicionar Ficha"
+              onclick="abreModal()"
+            >
+              Adicionar ficha
+            </button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="fechaModal()">&times;</span>
+                <h2>Adicionar Ficha</h2>
+                <form id="modalForm">
+                  <label for="name">Nome:</label>
+                  <input type="text" id="name" name="name" required />
+                  <label for="class">Classe:</label>
+                  <input type="text" id="class" name="class" required />
+                  <label for="race">Raça:</label>
+                  <input type="text" id="race" name="race" required />
+                  <label for="age">Idade:</label>
+                  <input type="text" id="age" name="age" required />
+                  <button type="button" onclick="adicionarFicha()">
+                    Adicionar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </h2>
+          <div class="tabelas"></div>
+        </article>
+      </section>
+      <aside id="patch">
+        <article class="charnote">
+          <h2>&spades; Patch notes:</h2>
+          <div class="chatbox">
+            <h2>Patch Notes - Versão 1.1.0</h2>
+            <h3>Novas Funcionalidades:</h3>
+            <p>
+              1. Personalização de Fundo: Agora os usuários podem escolher entre
+              uma variedade de fundos personalizados para suas fichas de RPG,
+              permitindo uma maior individualização e imersão no universo do
+              jogo.
+            </p>
+            <h3>Melhorias:</h3>
+            <p>
+              1. Otimização de Desempenho: Realizamos diversas otimizações de
+              desempenho para garantir que o site funcione de forma mais
+              eficiente, especialmente ao lidar com fichas de personagem mais
+              complexas.
+            </p>
+            <h3>Correções de Erros:</h3>
+            <p>
+              1. Corrigido Problema de Salvar Fichas: Resolvemos um problema que
+              ocasionalmente impedia os usuários de salvar suas fichas de
+              personagem. Agora todas as alterações são salvas corretamente.
+            </p>
+            <p>
+              2. Corrigido Bug na Geração de Estatísticas: Corrigimos um bug que
+              estava causando a geração incorreta de estatísticas para certas
+              raças e classes. Agora a geração de estatísticas está precisa e de
+              acordo com as regras do sistema escolhido.
+            </p>
+            <h3>Outras Atualizações:</h3>
+            <p>
+              Realizamos pequenas correções de texto e ajustes visuais em toda a
+              plataforma para melhorar a consistência e legibilidade.
+            </p>
+            <p>
+              Observação: Agradecemos a todos os usuários que contribuíram com
+              feedback e sugestões para esta atualização. Continuaremos
+              trabalhando para tornar nossa plataforma de criação de fichas de
+              RPG ainda melhor e mais completa para atender às necessidades da
+              comunidade de jogadores.
+            </p>
+          </div>
+        </article>
+      </aside>
+      <footer id="rodape">
+        <p>
+          <em
+            >Copyright &copy; 2024 - by Lucas Marques<br /><a
+              href="https://www.instagram.com/lucasmarques_leo"
+              target="_blank"
+              >Instagram</a
+            >
+            |
+            <a href="https://github.com/Lucas-Marques-Leao" target="_blank"
+              >GitHub</a
+            ></em
+          >
+        </p>
+      </footer>
+    </div>
+    <audio id="musica" loop>
+      <source src="midia/twin-elms.mp3" type="audio/mp3" />
+      <p>Seu navegador não suporta mp3</p>
+    </audio>
+    <script src="./js/funcoes.js"></script>
+    <script src="./js/Ficha.js"></script>
+  </body>
+</html>

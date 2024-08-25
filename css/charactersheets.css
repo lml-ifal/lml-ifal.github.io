@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+header#cabecalho button {
+  padding: 6px 12px;
+  margin: 2px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: -26px;
+  right: 0px;
+  background-color: #000000ce;
+  transition: background-color 0.2s;
+  color: #ffffff;
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+header#cabecalho img#chart {
+  position: fixed;
+  left: 1100px;
+  top: 50px;
+  width: 300px;
+}
+
+nav#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 180px;
+  left: -10px;
+  width: 102.5%;
+  font-family: "Tillana", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  background-color: rgb(56, 35, 8);
+}
+
+aside#patch {
+  display: block;
+  width: 380px;
+  float: right;
+  padding-left: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 10px;
+  background-color: #d6d5d5;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*Navegação*/
+nav#men {
+  display: block;
+}
+
+nav#men ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 175px;
+  left: -10px;
+  width: 102.5%;
+  font-family: "Tillana", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  background-color: rgb(56, 35, 8);
+}
+nav#men li {
+  float: left;
+  text-align: center;
+  background-color: rgb(56, 35, 8);
+  padding: 9px;
+  margin: 2px;
+
+  transition: background-color 1s;
+}
+nav#men li:hover {
+  background-color: #df1616;
+}
+nav#men h1 {
+  display: none;
+}
+nav#men a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+nav#men a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/*Tabelas*/
+
+table.tabelaficha caption {
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
+  font-weight: bolder;
+  font-family: "Tillana", sans-serif;
+  background-color: #610000;
+  padding: 5px 0px 5px 0px;
+  margin: 10px 0px 0px 0px;
+  transition: background-color 1s;
+}
+
+table.tabelaficha caption:hover {
+  background-color: #000000;
+}
+
+table.tabelaficha caption span {
+  display: block;
+  float: right;
+  color: #ffffff;
+  font-size: 8pt;
+  margin-top: 10px;
+}
+
+div.chatbox {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+div.chatbox p {
+  display: flex;
+  width: fit-content;
+  justify-content: start;
+  align-items: center;
+  text-indent: 0px;
+  font-family: "Times New Roman", Times, sans-serif;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 50px;
+  border: 1px solid #888;
+  border-radius: 5%;
+  width: 80%;
+  color: black;
+  max-width: 290px;
+}
+
+.modal-content button {
+  background-color: #db0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.modal-content button:hover {
+  background-color: #ff6600;
+}
+
+div.modal-content h2 {
+  background-color: white;
+  color: black;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    margin: 10% auto;
+  }
+  .modal-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 90%;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fichas</title>
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="shortcut icon" href="artes/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="login-register-container">
+      <header class="auth-header">
+        <hgroup>
+          <h1>Forjados em Sangue</h1>
+          <p>"O sol negro que paira sobre o deserto"</p>
+        </hgroup>
+      </header>
+      <form class="login-register-form" id="register">
+        <h2>Cadastro</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="user">Usuário:</label>
+        <input type="text" id="user" name="user" required />
+        <label for="pass">Senha:</label>
+        <input type="password" id="pass" name="pass" required />
+        <button type="button" onclick="register()">Cadastrar</button>
+        <p>Já possui cadastro? <a href="index.html">logar!</a></p>
+      </form>
+    </div>
+    <script src="./js/funcoes.js"></script>
+    <script src="./js/Ficha.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>
