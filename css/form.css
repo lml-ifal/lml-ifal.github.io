@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+form {
+  width: 500px;
+  margin: auto;
+  background-color: #533a1196;
+  box-shadow: 7px 4px 3px #533a11;
+}
+
+input,
+textarea {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 13pt;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:hover,
+textarea:hover {
+  background-color: rgb(255, 0, 0, 10);
+}
+
+button {
+  background-color: #db0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+
+legend {
+  color: #000000;
+  font-weight: bold;
+  font-size: 13pt;
+  font-family: sans-serif;
+}
+
+fieldset {
+  border-color: #ffffff;
+  margin: 20px;
+}
+
+fieldset#sexo {
+  width: 150px;
+}
+
+fieldset#usuario {
+  background: url(../artes/darksunicone.png) no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+  background: url(../artes/iconhouse.png) no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+  background: url(../artes/iconmsg.png) no-repeat 95% 95%;
+}
+
+fieldset#donate {
+  background: url(../artes/icondon.png) no-repeat 95% 95%;
+}

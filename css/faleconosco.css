@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+header#cabecalho button {
+  padding: 6px 12px;
+  margin: 2px 2px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  background-color: #000000ce;
+  transition: all 0.2s;
+  color: #ffffff;
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+nav#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 150px;
+  left: -10px;
+  width: 102.5%;
+  font-family: "Tillana", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  background-color: rgb(56, 35, 8);
+}
+
+article#myself h3 {
+  font-size: 30pt;
+  font-family: "PlayfairDisplay", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+article#myself p {
+  font-family: "Tangerine", sans-serif;
+  font-size: 25pt;
+  color: #240e25;
+  text-shadow: 0.55px 0.55px 0.55px #240e25;
+  padding: 10px;
+}
+
+article#artigo-formulario h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-family: "PlayfairDisplay", sans-serif;
+  color: #ffffff;
+  background-color: #533a11;
+  padding-top: 20px;
+}
+
+div#company {
+  width: 1100px;
+  height: 500px;
+  margin: auto;
+}
+
+div#company h2 {
+  display: block;
+  position: relative;
+  font-size: 44pt;
+  color: #533a11;
+  font-family: "PlayfairDisplay", sans-serif;
+  top: 190px;
+  left: 45px;
+}
+
+div#company p#reward {
+  display: block;
+  position: relative;
+  top: 150px;
+  left: 55px;
+  font-size: 43pt;
+  color: #533a11;
+  font-family: "PlayfairDisplay", sans-serif;
+}
+
+img#selfie {
+  display: block;
+  position: relative;
+  left: 200px;
+  top: 0px;
+}
+
+article#charnote h1 {
+  text-align: center;
+  font-family: "PlayfairDisplay", sans-serif;
+  font-size: 30pt;
+  background-color: #000000;
+  color: #ffffff;
+}

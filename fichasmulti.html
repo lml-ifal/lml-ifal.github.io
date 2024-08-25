@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="artes/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/randomsheet.css" />
+    <title>Fichas Aleatórias</title>
+  </head>
+  <body>
+    <script src="./js/fichaAleatoria.js"></script>
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Fichas Gloriosas e Aleatorizadas</h1>
+          <p>Ideias de Personagens Aleatórios para a sua Campanha!</p>
+        </hgroup>
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="suaficha.html">Fichas</a></li>
+            <li><a href="fichasmulti.html">Fichas Aleatórias</a></li>
+            <li style="float: right">
+              <a href="fale-conosco.html">Fale Conosco</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="playPause" onclick="tocaRaul()">PLAY &#9658;</button>
+        <button onclick="stop()">STOP</button>
+
+        <button onclick="reload()">REFRESH &#x21bb;</button>
+      </header>
+      <section id="corpo-full">
+        <h2 style="display: none">Geração randômica</h2>
+        <article class="charnote">
+          <h2>Resultados:</h2>
+          <script>
+            const article = document.querySelector("article[class=charnote]");
+            const fa1 = new Fichaleatoria();
+            fa1.setRandomMotive();
+
+            const fa2 = new Fichaleatoria();
+            fa2.setRandomMotive();
+
+            const fa3 = new Fichaleatoria();
+            fa3.setRandomMotive();
+
+            const fa4 = new Fichaleatoria();
+            fa4.setRandomMotive();
+
+            ////////////////TELA///////////////////
+
+            article.innerHTML += "<h2>Ficha 1</h2>";
+            fa1.exibirNaTela();
+            article.innerHTML += fa1.info;
+            article.innerHTML += "<h2>Ficha 2</h2>";
+            fa2.exibirNaTela();
+            article.innerHTML += fa2.info;
+            article.innerHTML += "<h2>Ficha 3</h2>";
+            fa3.exibirNaTela();
+            article.innerHTML += fa3.info;
+            article.innerHTML += "<h2>Ficha 4</h2>";
+            fa4.exibirNaTela();
+            article.innerHTML += fa4.info;
+          </script>
+        </article>
+      </section>
+      <footer id="rodape">
+        <p>
+          <em
+            >Copyright &copy; 2024 - by Lucas Marques<br /><a
+              href="https://www.instagram.com/lucasmarques_leo"
+              target="_blank"
+              >Instagram</a
+            >
+            |
+            <a href="https://github.com/Lucas-Marques-Leao" target="_blank"
+              >GitHub</a
+            ></em
+          >
+        </p>
+      </footer>
+    </div>
+    <audio id="musica" loop>
+      <source src="midia/bazar.mp3" type="audio/mp3" />
+      <p>Seu navegador não suporta mp3</p>
+    </audio>
+    <script src="./js/funcoes.js"></script>
+  </body>
+</html>
